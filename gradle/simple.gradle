@@ -1,0 +1,19 @@
+ext {
+    //app名字
+    appName = "广西快3"
+    //app启动页图片(必须在drawable文件夹中)
+    splashPic = "splash_pc"
+    //app包名
+    packagename = "com.mj.gxks"
+    //推送key
+    jpush_appkey = "6d3e277a1d7936a29be74e2d"
+    //app版本名
+    autoVersionName = "1.2.4"
+    //主题色
+    themeColor = "#342e32"
+    //应用图标
+    applogo = "@mipmap/logo_gxk3"
+    //显示正常splash的时间
+    show_splash_time = "2018-01-25 18:00:00"
+    app_id = "2"
+}

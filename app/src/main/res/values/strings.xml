@@ -1,0 +1,4 @@
+<resources>
+    <string name="drawlayout_open">开启</string>
+    <string name="drawlayout_close">关闭</string>
+</resources>
