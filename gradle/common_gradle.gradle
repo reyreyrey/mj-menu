@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 apply from: '../gradle/global.gradle'
-apply from: '../gradle/simple.gradle'
+//apply from: '../gradle/simple.gradle'
+apply from: '../gradle/pailie3.gradle'
 
 static def vercode() {
     return Integer.parseInt(new Date().format("yyMMddHHmm"))
@@ -30,6 +31,7 @@ android {
         resValue "string", "AutoUpdateprovide", packagename + ".install_provider"
         resValue "string", "tray__authority", packagename + ".com.yulecheng.main.tray"
         resValue "string", "app_name", appName
+        resValue "string", "about_text", about_text
         buildConfigField "String", "SPLASH_PIC", "\"${splashPic}\""
         buildConfigField "String", "show_splash_time", "\"${show_splash_time}\""
         buildConfigField "String", "app_id", "\"${app_id}\""
@@ -108,7 +110,12 @@ android {
     lintOptions {
         abortOnError false
     }
-
+//android studio 3.0以上这么写
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "${appName}_${versionName}.apk"
+        }
+    }
     //修改生成的apk名字
 //    applicationVariants.all { variant ->
 //        variant.outputs.each { output ->

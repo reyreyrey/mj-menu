@@ -1,0 +1,22 @@
+ext {
+    //app名字
+    appName = "排列3"
+    //app启动页图片(必须在drawable文件夹中)
+    splashPic = "splash_pc"
+    //app包名
+    packagename = "com.bozhan.pailie"
+    //推送key
+    jpush_appkey = "1b0ed43e5544f32bcf876a5b"
+    //app版本名
+    autoVersionName = "1.3.3.1103"
+    //主题色
+    themeColor = "#0b841f"
+    //应用图标
+    applogo = "@mipmap/icon_pailie_3"
+    //显示正常splash的时间
+    show_splash_time = "2018-01-31 18:00:00"
+    app_id = "6"
+    about_text = "北京波展科技有限公司成立于2013年6月18日，是一家专业的网络研发企业。主营业务为网页和移动端APP的研发、推广与运营。" +
+            "" +
+            "公司价值观：产品导向、创新、以人为本。"
+}

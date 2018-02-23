@@ -69,13 +69,13 @@ public class MainActivity extends UIActivity<ActivityMainBinding> implements Nav
 
     private void initBanner() {
         List<Integer> images = new ArrayList<>();
-        images.add(R.drawable.banner_1);
-        images.add(R.drawable.banner_2);
-        images.add(R.drawable.banner_3);
-        images.add(R.drawable.banner_4);
+        images.add(R.drawable.baaner1);
+        images.add(R.drawable.baaner2);
+        images.add(R.drawable.baaner3);
+        images.add(R.drawable.baaner4);
         List<String> titles = new ArrayList<>();
-        titles.add("历史开奖均值分析，祝您一臂之力");
-        titles.add("历史开奖和值分析");
+        titles.add("笑一笑十年少");
+        titles.add("夜半惊魂，胆小勿入");
         titles.add("丰富多彩的论坛，让你一吐为快");
         titles.add("看累了，来一些养眼图片休息一会");
         databinding.contentInclude.banner.setImageLoader(new GlideImageLoaderBanner());
@@ -88,10 +88,10 @@ public class MainActivity extends UIActivity<ActivityMainBinding> implements Nav
             public void OnBannerClick(int position) {
                 switch (position) {
                     case 0:
-                        startActivity(new Intent(context, LibraryMainActivity.class));
+                        UIManager.xiaohua(context);
                         break;
                     case 1:
-                        startActivity(new Intent(context, LibraryMainActivity.class));
+                        UIManager.guigushi(context);
                         break;
                     case 2:
                         UIManager.postList(context);

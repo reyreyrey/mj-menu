@@ -2,5 +2,5 @@ apply from: '../gradle/common_gradle.gradle'
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     //加号替换为jitpack版本号
-    compile 'com.github.reyreyrey:library:2.6'
+    compile 'com.github.reyreyrey:library:2.7'
 }
